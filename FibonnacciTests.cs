@@ -9,7 +9,7 @@ namespace FibonnacciTests
 		[InlineData(2, 1)]  
 		[InlineData(4, 2)]  
 		[InlineData(10, 34)]
-		public void GetNthFibonacci_ShouldReturnCorrectNumber(int n, int expected)
+		public void GetNthFibonacci_WithValidInput_ShouldReturnCorrectNumber(int n, int expected)
 		{
 			int result = Fibonacci.GetNthFibonacci(n);
 			Assert.Equal(expected, result);
