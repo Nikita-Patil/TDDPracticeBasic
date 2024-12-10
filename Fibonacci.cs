@@ -11,7 +11,7 @@ namespace TDDTestProject
 		public static int GetNthFibonacci(int n)
 		{
 			if (n <= 0)
-				throw new ArgumentException("N must be a positive integer.");
+				throw new ArgumentException("N must be greater than 0.");
 
 			if (n == 1)
 				return 0;  
