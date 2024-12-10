@@ -21,7 +21,7 @@ namespace FibonnacciTests
 		public void GetNthFibonacci_WithInvalidInput_ShouldThrowArgumentException(int n)
 		{
 			var exception = Assert.Throws<ArgumentException>(() => Fibonacci.GetNthFibonacci(n));
-			Assert.Equal("N must be a positive integer.", exception.Message);
+			Assert.Equal("N should be greater than 0.", exception.Message);
 		}
 
 	}
